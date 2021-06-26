@@ -1,0 +1,210 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-brand {
+  display: -ms-grid;
+  display: grid;
+  background-color: #9ef1d3;
+  height: 80px;
+  -ms-grid-columns: 30% 1fr;
+      grid-template-columns: 30% 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.header-brand img {
+  display: -ms-grid;
+  display: grid;
+  width: 180px;
+  max-height: 80px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 2em;
+}
+
+.hero {
+  background-color: #c4c4c4;
+  min-height: 250px;
+  height: 41vw;
+}
+
+.hero img {
+  max-height: 35vw;
+}
+
+.bg-nav {
+  background-color: #c4c4c4;
+  -webkit-box-shadow: 5px 5px 5px #777272;
+          box-shadow: 5px 5px 5px #777272;
+}
+
+.header-name {
+  margin-left: 3em;
+}
+
+.main {
+  margin: 2em;
+}
+
+.dishes {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+}
+
+.content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+}
+
+.content .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  -webkit-box-shadow: 5px 5px 5px #2f3634;
+          box-shadow: 5px 5px 5px #2f3634;
+  border: 1px solid black;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 120px;
+          flex: 0 0 120px;
+}
+
+.content .item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.content .item .text {
+  display: -ms-grid;
+  display: grid;
+  padding: .5em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.content .item .text p {
+  display: -ms-grid;
+  display: grid;
+  font-size: 10px;
+  margin-bottom: 2em;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.content .item .text p strong {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  vertical-align: text-bottom;
+}
+
+.content .item h5 {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.content .item .img img {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin-right: 1em;
+  border-radius: 50%;
+}
+
+.content .img {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F5F6F8;
+  height: 100%;
+}
+
+.checked {
+  color: orange;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 150px;
+  background-color: #9ef1d3;
+}
+
+.footer img {
+  width: 20%;
+  max-height: 80px;
+}
+
+/* Media query for mobil size */
+@media screen and (max-width: 480px) {
+  .header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-brand {
+    margin: 0 auto;
+  }
+  .header-brand img {
+    margin-left: 100%;
+  }
+  .header-name {
+    display: none;
+  }
+  .content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 2em;
+  }
+}
+
+/* Media query for tablet size */
+@media (min-width: 481px) and (max-width: 767px) {
+  .content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
